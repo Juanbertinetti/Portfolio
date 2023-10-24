@@ -76,7 +76,7 @@ html{
 /******************************************************* INICIO  *********************************************************************************************************/
 
 .inicio {
-    background : linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.8)), url(IMG/fondo.avif);
+    background : linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.8)), url("../fondo.jpg");
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -180,64 +180,156 @@ html{
 
 .skills
 {
-    background-color: #252A2E;
+    background-color: #252525;
     color: #fff;
     padding: 50px 20px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contenido-skills
-{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 150px;
-    width: 100%;
-}
-
-.skills .conteiner 
-{
-    height: 100%;
-    width: 100%;
-}
-
-.conteiner-skills .img
-{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.conteiner-skills
-{
-    flex-wrap: wrap;
-    gap: 100px;
-    padding: 0 30px;
-}
-
-.conteiner-skills img
-{
-    cursor: pointer;
-    flex-direction: column;
-    height: 70px;
-    transition: .3s linear;
-    width: 70px;
-}
-
-.conteiner-skills img .img
-{
-    border-radius: 10px;
-    height: 60px;
-}
-
-img
-{
-        overflow-clip-margin: content-box;
-        overflow: clip;
     
+}
+
+
+.skills .contenido_seccion
+{
+    max-width: 1110px;
+    margin: auto;
+    align-items: center;
+}
+
+.skills h2
+{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila 
+{
+    display: flex;
+}
+
+.skills .fila .col
+{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3
+{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.skills .skill  > span
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px ;
+}
+
+.skills .skill .barra-skill
+{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso
+{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .HTML{
+    width: 0%;
+    animation: 2s HTML forwards;
+}
+@keyframes HTML {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .CSS{
+    width: 0%;
+    animation: 2s CSS forwards;
+}
+@keyframes CSS {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .JavaScript{
+    width: 0%;
+    animation: 2s JavaScript forwards;
+}
+@keyframes JavaScript {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .C{
+    width: 0%;
+    animation: 2s C forwards;
+}
+@keyframes C {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .MySql{
+    width: 0%;
+    animation: 2s MySql forwards;
+}
+@keyframes MySql {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .SqlServer{
+    width: 0%;
+    animation: 2s SqlServer forwards;
+}
+@keyframes SqlServer {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .GIT{
+    width: 0%;
+    animation: 2s GIT forwards;
+}
+@keyframes GIT {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .GitHub{
+    width: 0%;
+    animation: 2s GitHub forwards;
+}
+@keyframes GitHub {
+    0%{width: 0%;}
+    100%{width: 99%;}
 }
 
 
@@ -318,53 +410,45 @@ img
 
 /*****************************************CONTACTO*************************************************/
 
-.contacto{
-    background-color: #252A2E;
+
+footer
+{
+    background-color: #1e2326 ;
     color: #fff;
-    padding: 50px 20px;
-    display: block;
 }
-
-.conteinerContact {
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-    width: 100%;
-}
-
-.containerContact .icons {
-    align-items: none;
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-    padding-bottom: 50px;
-}
-
-.contenedor-a {
-    align-items: center;
-    display: flex;
-    height: 120px;
-    justify-content: center;
+.contacto h2{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    width: 120px;
+    padding: 20px 0;
+
 }
 
-@media (max-width: 1090px){
-    .containerContact .icons {
-        gap: 0;
-    }
+.footer-cointer
+{
+    width: 100%;
+    padding: 70px 30px 20px;
 }
 
+.socialIcons
+{
+    display: flex;
+    justify-content: center;
+}
 
-.containerContact .icons a {
-    color: #f1f1f1;
-    color: #a9a5a9;
-    font-family: Josefin Sans,sans-serif;
-    font-size: 20px;
-    line-height: 40px;
+.socialIcons a
+{
     text-decoration: none;
-    transition: .15s linear;
+    padding: 10px;
+    background-color: #1CB698;
+    margin: 10px;
+    border-radius: 50%;
 }
+
+.socialIcons a i
+{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
